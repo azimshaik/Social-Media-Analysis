@@ -18,6 +18,7 @@ Execute the code
 python twitterdata.py
 ```
 Saving Data in to a file
-```python twitterdata.py > tweets.txt
+```python
+python twitterdata.py > tweets.txt
 ```
 
