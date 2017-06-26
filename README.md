@@ -31,18 +31,18 @@ or
 easy_install watson-developer-cloud
 ```
 Emotion Tones:
-	1.Anger
-	2.Disgust
-	3.Fear
-	4.Joy
-	5.Sadness
+	1. Anger
+	2. Disgust
+	3. Fear
+	4. Joy
+	5. Sadness
 Language Tones:
-	1.Analytical
-	2.Confident
-	3.Tenatative
+	1. Analytical
+	2. Confident
+	3. Tenatative
 Social Tones:
-	1.Openness
-	2.Conscientiousness
-	3.Extraversion
-	4.Agreeableness
-	5.Emotional Range 
+	1. Openness
+	2. Conscientiousness
+	3. Extraversion
+	4. Agreeableness
+	5. Emotional Range 
