@@ -20,4 +20,14 @@ Saving Data in to a file
 ```python
 python twitterdata.py > tweets.txt
 ```
-
+------------------------------------------------
+## Watson Developer Cloud
+Install watson-developer cloud package
+```python
+pip install --upgrade watson-developer-cloud
+```
+or 
+```python 
+easy_install watson-developer-cloud
+```
+ 
