@@ -1,5 +1,6 @@
 import tweepy
 import keys
+from tweetClass import Tweet
 
 auth = tweepy.OAuthHandler(keys.consumer_key, keys.consumer_secret)
 auth.set_access_token(keys.access_token, keys.access_token_secret)
@@ -10,20 +11,17 @@ def userinfo(status,user,id):
     print status
     print user.screen_name
     print 'https://twitter.com/'+user.screen_name+'/status/'+str(id)
-    
 
+tweetObjsArray = []
 #For Mentions Time Line tweets
 public_tweets = api.mentions_timeline()
 for tweet in public_tweets:
-    #print tweet.text
-    #print tweet.id
-    #print tweet.geo
-    #print tweet.lang
-    #print tweet.retweet_count
-    userinfo(tweet.text,tweet.user,tweet.id)
-
-    #print tweet.place
-    
+    #userinfo(tweet.text,tweet.user,tweet.id)
+    tweeturl = 'https://twitter.com/'+tweet.user.screen_name+'/status/'+str(tweet.id)
+    tweetObj = Tweet(tweet.id,tweet.user.screen_name, tweet.text, tweeturl)
+    tweetObjsArray.append(tweetObj)
+   
+print len(tweetObjsArray)
 
 # trends = api.trends_available()
 # for trend in trends:
