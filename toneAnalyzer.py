@@ -14,17 +14,36 @@ result2 = tone_analyzer.tone(text='I hate you.')
 
 # for dump in (json.dumps(result2['document_tone']['tone_categories'])):
 #     print dump
-print (json.dumps(result2['document_tone']['tone_categories'][0]['category_id']))
+#print (json.dumps(result2['document_tone']['tone_categories'][0]['category_id']))
 #print (json.dumps(result2['document_tone']['tone_categories'][0]['tones']))
 length = len(result2['document_tone']['tone_categories'][0]['tones'])
 #print length
 i=0
-while i<length:
-    print (json.dumps(result2['document_tone']['tone_categories'][0]['tones'][i]))
-    i+=1
+# while i<length:
+#     #print (json.dumps(result2['document_tone']['tone_categories'][0]['tones'][i]))
+#     i+=1
 
 print '----------------------------------------------------------'
-# print (json.dumps(result2['document_tone']['tone_categories'][1]['category_id']))
+
+#looping through tone_categories
+toneCatLength = len(result2['document_tone']['tone_categories'])
+
+#print toneCatLength
+i=0
+while i<toneCatLength:
+    #print (result2['document_tone']['tone_categories'][i])
+    tonesLength = len(result2['document_tone']['tone_categories'][i]['tones'])
+    j=0
+    print result2['document_tone']['tone_categories'][i]['category_name']
+    while j<tonesLength:
+        #print (result2['document_tone']['tone_categories'][i]['tones'][j])
+        print 'Tone Name: ' + result2['document_tone']['tone_categories'][i]['tones'][j]['tone_name']
+        print 'Score:  ' 
+        print result2['document_tone']['tone_categories'][i]['tones'][j]['score']
+        j+=1
+    print '----------------------------------------------------------'
+    i+=1
+#print (json.dumps(result2['document_tone']['tone_categories'][2]['category_id']))
 # print '----------------------------------------------------------'
 # print (json.dumps(result2['document_tone']['tone_categories'][2]['category_id']))
 # print type(result2)
