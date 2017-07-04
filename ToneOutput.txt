@@ -1,0 +1,47 @@
+Tue Jul  4 18:11:17 2017
+----------------------------------------------------------
+Emotion Tone
+Tone Name: Anger
+Score:  
+1.0
+Tone Name: Disgust
+Score:  
+0.931034
+Tone Name: Fear
+Score:  
+0.931034
+Tone Name: Joy
+Score:  
+0.0
+Tone Name: Sadness
+Score:  
+0.916667
+----------------------------------------------------------
+Language Tone
+Tone Name: Analytical
+Score:  
+0.0
+Tone Name: Confident
+Score:  
+0.0
+Tone Name: Tentative
+Score:  
+0.0
+----------------------------------------------------------
+Social Tone
+Tone Name: Openness
+Score:  
+0.160467
+Tone Name: Conscientiousness
+Score:  
+0.286048
+Tone Name: Extraversion
+Score:  
+0.463729
+Tone Name: Agreeableness
+Score:  
+0.583992
+Tone Name: Emotional Range
+Score:  
+0.061878
+----------------------------------------------------------
