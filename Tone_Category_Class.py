@@ -18,5 +18,5 @@ toneArray.append(Tone('Anger',0.80,'anger'))
 toneArray.append(Tone('Happy',0.90,'happy'))
 toneCategoryArray.append(ToneCategory('emotion_tone',toneArray,'Emotion Tone'))
 
-for toneCat in toneCategoryArray:
-    print toneCat.tones[1].tone_name
+# for toneCat in toneCategoryArray:
+#     print toneCat.tones[1].tone_name
