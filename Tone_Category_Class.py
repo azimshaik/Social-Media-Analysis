@@ -1,4 +1,5 @@
 class Tone():
+   
     def __init__(self,tone_name, score, tone_id):
         self.tone_name = tone_name
         self.score = score
