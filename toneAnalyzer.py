@@ -40,5 +40,5 @@ while i<toneCatLength:
     toneCategory = ToneCategory(category_id,tonesArray, category_name)
     i+=1
     toneCategoryArray.append(toneCategory)
-print type(toneCategoryArray[0].category_id)
+print toneCategoryArray[0].category_id
 tonesArray = []
