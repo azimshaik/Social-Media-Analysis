@@ -29,8 +29,8 @@ for tweet in public_tweets:
     tweetObj = Tweet(tweet.id,tweet.user.screen_name, tweet.text, tweeturl)
     tweetObjsArray.append(tweetObj)
 tweetArrayLen = len(tweetObjsArray)
-print tweetObjsArray[0].tweet
-resultx =  (json.dumps(tone_analyzer.tone(text='I hate you.'),indent=2))
+
+#resultx =  (json.dumps(tone_analyzer.tone(text='I hate you.'),indent=2))
 
 
 def toneAnalyzHelper(result2):
@@ -66,7 +66,10 @@ def toneAnalyzHelper(result2):
 
 k=0
 while k < tweetArrayLen:
-    result2 = tone_analyzer.tone(text=tweetObjsArray[0].tweet)
+    result2 = tone_analyzer.tone(text=tweetObjsArray[k].tweet)
+    print tweetObjsArray[k].tweet
+    
+    print "Response URL:"+ tweetObjsArray[k].url
     toneAnalyzHelper(result2)
     k+=1
 
