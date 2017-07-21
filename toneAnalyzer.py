@@ -68,7 +68,6 @@ k=0
 while k < tweetArrayLen:
     result2 = tone_analyzer.tone(text=tweetObjsArray[k].tweet)
     print tweetObjsArray[k].tweet
-    
     print "Response URL:"+ tweetObjsArray[k].url
     toneAnalyzHelper(result2)
     k+=1
